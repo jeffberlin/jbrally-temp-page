@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1">
+		<title>Jeff Berlin Rally - JBR</title>
+		<!-- <link rel="stylesheet" href="css/holding.css"> -->
+		<style>
+		body {
+			font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+			text-align: center;	
+		}
+
+		.flex-container {
+			display: -webkit-flex;
+			display: inline-flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+
+		#headerlogo {
+			width: 600px;
+			height: auto;
+			margin-top: -130px;
+		}
+
+		h1 {
+			font-size: 24pt;
+			margin-bottom: -5px;
+			letter-spacing: .70px;
+		}
+
+		h1, h3 {
+			color: #3F3F3F;
+		}
+
+		h3 {
+			font-size: 18pt;
+			letter-spacing: .60px;
+		}
+
+		img {
+			width: 70px;
+			height: auto;
+			margin: 15px;
+		}
+
+		#facebook:hover, #instagram:hover {
+			cursor: pointer;
+		}
+
+		#flex-social img {
+			width: 300px;
+			display: flex;
+		}
+
+		p {
+			font-size: 16pt;
+			margin-top: -10px;
+			letter-spacing: .50px;
+		}
+
+		@media screen and (max-width: 750px) {
+			#headerlogo {
+				width: 350px;
+				height: auto;
+				margin-top: -90px;
+				margin-bottom: -50px;
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h3 {
+				font-size: 14pt;
+			}
+			#facebook, #instagram, #snapname {
+				width: 45px;
+				margin: 5px;
+				display: c;
+			}
+			p {
+				font-size: 10pt;
+				padding-top: 8px;
+				letter-spacing: .75px;
+			}
+		}
+
+		@media screen and (max-height: 415px) {
+			#headerlogo {
+				width: 300px;
+				height: auto;
+				margin-top: -70px;
+				margin-bottom: -20px;
+			}
+			h1 {
+				font-size: 20pt;
+			}
+			h3 {
+				font-size: 16pt;
+				margin-bottom: 5px;
+			}
+			#facebook, #instagram, #snapname {
+				width: 40px;
+				margin: 5px;
+			}
+			p {
+				margin-top: -10px;
+				letter-spacing: .70px;
+			}
+		}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="flex-container">
+			
+			<div class="header">
+				<img id="headerlogo" src="images copy/jbrnew-min.png">
+			</div>
+			<h1 id="redesigned">Our site is being redesigned: Stay tuned!</h1>
+			<h3>While you wait, follow JBR elsewhere!</h3>
+
+			<div class="flex-social">
+				<img id="facebook" type="button" value="Facebook" src="images copy/fb-min.png" onClick="goToFacebook()">
+				<img id="instagram" type="button" value="Instagram" src="images copy/instagram-min.png" onClick="goToInstagram()">
+				<div>
+					<img id="snapname" src="images copy/snapchatlogo-min.png">
+					<p>@jeffberlinrally</p>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			
+			function goToFacebook() {
+				window.location = "https://www.facebook.com/jberlinrally"
+			}
+
+			function goToInstagram() {
+				window.location = "https://www.instagram.com/jeffberlinrally"
+			}
+
+		</script>
+
+		<!-- <script type="text/javascript" src="js/holding.js"></script> -->
+
+	</body>
+</html>
